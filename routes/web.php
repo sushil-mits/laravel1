@@ -19,7 +19,12 @@ Route::get('/', function () {
 Route::get('users',['uses'=>'usersController@index']);
 
 Route::get('users/create',['uses'=>'usersController@create']);
+
 Route::post('users',['uses'=>'usersController@store']);
 Auth::routes();
+Route::get('profile',['uses'=>'PagesController@profile']);
+Route::get('settings',['uses'=>'PagesController@settings']);
 
 Route::get('/home', 'HomeController@index');
+
+Route::get('blade',['uses'=>'PagesController@blade']);

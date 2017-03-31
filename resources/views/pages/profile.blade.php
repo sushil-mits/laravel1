@@ -5,15 +5,13 @@
     <div class="row">
         <div class="col-md-8 col-md-offset-2">
             <div class="panel panel-default">
-                <div class="panel-heading">Dashboard</div>
+                <div class="panel-heading">Profile</div>
 
                 <div class="panel-body">
-                    <h1>Hello, {{ $myname}} </h1>
+                    <p>{{ $married }} </p>
+                    <p>{{ $test }} </p>
 
-                    <h3>{{$age}} </h3>
-
-                    {{$auth->email}}{{$auth->name}}
-                    You are logged in as {!!Auth::user()->email !!} !
+                    <p>{{ $age }} </p>
                 </div>
             </div>
         </div>
